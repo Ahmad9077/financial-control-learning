@@ -205,9 +205,11 @@ a { color: inherit; text-decoration: none; }
   width: min(var(--max), calc(100% - 1rem));
   margin: auto;
   display: grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: 2rem;
   align-items: center;
+  justify-items: center;
+  text-align: center;
   padding: 4rem 0 2rem;
 }
 
@@ -215,6 +217,7 @@ a { color: inherit; text-decoration: none; }
   position: relative;
   z-index: 1;
   min-width: 0;
+  max-width: 980px;
 }
 
 .eyebrow {
@@ -362,6 +365,11 @@ main {
   z-index: 15;
   padding: 1rem;
   margin-bottom: 1.25rem;
+}
+
+.course-tools .tool-buttons {
+  justify-content: center;
+  margin-top: 0;
 }
 
 .search-box {

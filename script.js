@@ -117,8 +117,8 @@ function updateProgress() {
   const scrollTop = window.scrollY || document.documentElement.scrollTop;
   const height = document.documentElement.scrollHeight - window.innerHeight;
   const percent = height > 0 ? (scrollTop / height) * 100 : 0;
-  els.progressBar.style.width = `${percent}%`;
-  els.backToTop.classList.toggle("visible", scrollTop > 500);
+  if (els.progressBar) els.progressBar.style.width = `${percent}%`;
+  if (els.backToTop) els.backToTop.classList.toggle("visible", scrollTop > 500);
 }
 
 function normalize(text) {
@@ -131,13 +131,14 @@ function normalize(text) {
 }
 
 function filterTopics() {
+  if (!els.topicSearch) return;
   const query = normalize(els.topicSearch.value.trim());
   const cards = Array.from(document.querySelectorAll(".topic-card, .topic-section"));
   let matches = 0;
 
   if (!query) {
     cards.forEach(card => card.classList.remove("hidden-by-search"));
-    els.searchStatus.textContent = "";
+    if (els.searchStatus) els.searchStatus.textContent = "";
     return;
   }
 
@@ -147,7 +148,7 @@ function filterTopics() {
     if (isMatch && card.classList.contains("topic-card")) matches += 1;
   });
 
-  els.searchStatus.textContent = matches ? `تم العثور على ${matches} نتيجة مطابقة.` : "لا توجد نتائج مطابقة. جرّب كلمة مختلفة.";
+  if (els.searchStatus) els.searchStatus.textContent = matches ? `تم العثور على ${matches} نتيجة مطابقة.` : "لا توجد نتائج مطابقة. جرّب كلمة مختلفة.";
 }
 
 function renderQuiz() {
@@ -243,16 +244,16 @@ document.addEventListener("DOMContentLoaded", () => {
   renderQuiz();
 
   window.addEventListener("scroll", updateProgress, { passive: true });
-  els.backToTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+  els.backToTop?.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
 
-  els.studyModeBtn.addEventListener("click", () => {
+  els.studyModeBtn?.addEventListener("click", () => {
     const enabled = document.body.classList.toggle("study-mode");
     els.studyModeBtn.setAttribute("aria-pressed", String(enabled));
   });
 
-  els.topicSearch.addEventListener("input", filterTopics);
-  els.expandAll.addEventListener("click", () => document.querySelectorAll("details").forEach(item => item.open = true));
-  els.collapseAll.addEventListener("click", () => document.querySelectorAll("details").forEach(item => item.open = false));
+  els.topicSearch?.addEventListener("input", filterTopics);
+  els.expandAll?.addEventListener("click", () => document.querySelectorAll("details").forEach(item => item.open = true));
+  els.collapseAll?.addEventListener("click", () => document.querySelectorAll("details").forEach(item => item.open = false));
   els.nextQuestion.addEventListener("click", nextQuizStep);
   els.restartQuiz.addEventListener("click", restartQuiz);
 
