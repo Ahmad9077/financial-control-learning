@@ -222,11 +222,23 @@ function restartQuiz() {
   renderQuiz();
 }
 
+function prepareResponsiveTables() {
+  document.querySelectorAll("table").forEach(table => {
+    const headers = Array.from(table.querySelectorAll("thead th")).map(th => th.textContent.trim());
+    table.querySelectorAll("tbody tr").forEach(row => {
+      Array.from(row.children).forEach((cell, index) => {
+        cell.setAttribute("data-label", headers[index] || "");
+      });
+    });
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   if (window.AOS) {
     AOS.init({ duration: 650, once: true, offset: 80 });
   }
 
+  prepareResponsiveTables();
   updateProgress();
   renderQuiz();
 
