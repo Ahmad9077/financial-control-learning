@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="دورة عربية تفاعلية حول الرقابة المالية والتدقيق والرقابة الشرعية والهيئات الشرعية الرقابية في الكويت.">
+  <title>دليل الرقابة المالية والشرعية في الكويت</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">تخطي إلى المحتوى</a>
+
+  <header class="hero" id="top">
+    <nav class="top-nav" aria-label="التنقل الرئيسي">
+      <a class="brand" href="#top" aria-label="العودة إلى بداية الصفحة">
+        <span class="brand-mark"><i class="fa-solid fa-scale-balanced"></i></span>
+        <span>دليل الرقابة</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-controls="navLinks" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+        <span class="sr-only">فتح القائمة</span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#foundations">الأساسيات</a>
+        <a href="#financial-control">الرقابة المالية</a>
+        <a href="#audit">التدقيق</a>
+        <a href="#sharia">الرقابة الشرعية</a>
+        <a href="#kuwait-bodies">هيئات الكويت</a>
+        <a href="#quiz">الاختبار</a>
+      </div>
+    </nav>
+
+    <div class="hero-inner">
+      <div class="hero-copy" data-aos="fade-up">
+        <p class="eyebrow">ملخص تفاعلي للدراسة والمراجعة</p>
+        <h1>الرقابة المالية والتدقيق والرقابة الشرعية في الكويت</h1>
+        <p class="hero-text">
+          موقع تعليمي عربي يعيد بناء المادة في مسار واضح: من تعريف الرقابة وأشكالها، إلى الرقابة المالية الداخلية والخارجية،
+          ثم الرقابة الشرعية وتطورها القانوني والهيئات الرقابية الرئيسية في الكويت.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#main"><i class="fa-solid fa-book-open"></i> ابدأ الدراسة</a>
+          <button class="btn ghost" id="studyModeBtn" type="button" aria-pressed="false"><i class="fa-solid fa-highlighter"></i> وضع الدراسة</button>
+        </div>
+      </div>
+      <aside class="hero-panel" data-aos="fade-left" aria-label="ملخص الدورة">
+        <div class="metric"><strong>15+</strong><span>سؤال اختبار</span></div>
+        <div class="metric"><strong>4</strong><span>جداول مقارنة</span></div>
+        <div class="metric"><strong>6</strong><span>محطات زمنية</span></div>
+        <div class="metric"><strong>RTL</strong><span>تصميم عربي كامل</span></div>
+      </aside>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="course-tools" aria-label="أدوات الدراسة">
+      <label class="search-box" for="topicSearch">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input id="topicSearch" type="search" placeholder="ابحث عن: التدقيق الداخلي، الرقابة الشرعية، بنك الكويت المركزي..." autocomplete="off">
+      </label>
+      <div class="tool-buttons">
+        <button class="btn compact" id="expandAll" type="button"><i class="fa-solid fa-plus"></i> فتح الكل</button>
+        <button class="btn compact" id="collapseAll" type="button"><i class="fa-solid fa-minus"></i> إغلاق الكل</button>
+        <button class="btn compact" onclick="window.print()" type="button"><i class="fa-solid fa-print"></i> طباعة / PDF</button>
+      </div>
+      <p class="search-status" id="searchStatus" aria-live="polite"></p>
+    </section>
+
+    <section class="section intro-section topic-section" id="foundations" data-aos="fade-up">
+      <div class="section-heading">
+        <p class="eyebrow">المحور الأول</p>
+        <h2>مقدمة وتعريف الرقابة</h2>
+        <p>الرقابة هي نقطة البداية لفهم ضبط الأعمال المالية والإدارية والشرعية داخل المنشآت.</p>
+      </div>
+
+      <div class="grid two">
+        <article class="glass-card concept-card important-card">
+          <i class="fa-solid fa-compass-drafting"></i>
+          <h3>تعريف الرقابة</h3>
+          <p class="important-point">الرقابة هي مجموعة ضوابط يتم بموجبها مطابقة مسيرة تنفيذ العمل مع خطته المقررة.</p>
+        </article>
+        <article class="glass-card concept-card">
+          <i class="fa-solid fa-route"></i>
+          <h3>الفكرة التعليمية</h3>
+          <p>الرقابة لا تعني اكتشاف الخطأ فقط، بل تعني بناء نظام يوجه التنفيذ، يقيس الانحراف، ويصحح المسار قبل تضخم المخاطر.</p>
+        </article>
+      </div>
+
+      <details class="lesson-card topic-card" open>
+        <summary><span><i class="fa-solid fa-layer-group"></i> أشكال الرقابة في المنشآت التجارية</span></summary>
+        <div class="cards-list">
+          <article><strong>رقابة تنظيمية</strong><span>تنظيم صلاحيات كل جهة داخل المنشأة.</span></article>
+          <article><strong>رقابة مالية</strong><span>تسجيل العمليات في دفاتر المنشأة بطريقة سليمة وفي الوقت المناسب.</span></article>
+          <article><strong>رقابة التزام</strong><span>التزام المنشأة بالقوانين والتشريعات واللوائح التنظيمية المعمول بها.</span></article>
+          <article><strong>رقابة أمن وحماية</strong><span>تأمين موارد المنشأة وحمايتها.</span></article>
+          <article><strong>رقابة إدارية</strong><span>الرقابة على أنشطة كل وحدة من وحدات المنشأة لإتمام الهدف المطلوب منها.</span></article>
+          <article><strong>رقابة أداء</strong><span>تحقيق كفاءة وفعالية عمليات المنشأة للوصول إلى العوائد المالية المطلوبة.</span></article>
+        </div>
+      </details>
+    </section>
+
+    <section class="section topic-section" id="financial-control" data-aos="fade-up">
+      <div class="section-heading">
+        <p class="eyebrow">المحور الثاني</p>
+        <h2>الرقابة المالية</h2>
+        <p>تستهدف الرقابة المالية سلامة التصرفات المالية، كشف الانحرافات، ومطابقة الإجراءات المالية مع القوانين والقواعد النافذة.</p>
+      </div>
+
+      <div class="flow-diagram" aria-label="مخطط الرقابة المالية">
+        <div class="flow-node main">الرقابة المالية</div>
+        <div class="flow-branch">
+          <div class="flow-node">سلامة التصرفات المالية</div>
+          <div class="flow-node">كشف الانحرافات</div>
+          <div class="flow-node">مطابقة القوانين</div>
+          <div class="flow-node">تحصيل الإيرادات</div>
+          <div class="flow-node">ضبط المصروفات</div>
+        </div>
+      </div>
+
+      <div class="grid two">
+        <details class="lesson-card topic-card" open>
+          <summary><span><i class="fa-solid fa-building-shield"></i> الرقابة المالية الداخلية</span></summary>
+          <p><strong>التعريف:</strong> عملية يتم تصميمها وتنفيذها بواسطة المكلفين، وتقدم تأكيداً معقولاً حول تحقيق أهدافها بالاعتماد على التقارير المالية، كفاءة العمليات، والالتزام بالأنظمة السارية.</p>
+          <h3>خصائصها</h3>
+          <ul class="check-list">
+            <li>نظام متكامل تطبقه المنشأة، وليست حدثاً أو ظرفاً مؤقتاً.</li>
+            <li>تدخل في جميع سياسات وإجراءات المنشأة وتتلازم مع أسلوب إدارتها.</li>
+            <li>جميع أفراد المنشأة يؤثرون في إجراءات الرقابة إيجاباً أو سلباً.</li>
+            <li>تقدم للإدارة تأكيداً معقولاً حول الالتزام بالسياسات والإجراءات والمعايير المطلوبة.</li>
+          </ul>
+          <h3>مكونات نظام الرقابة المالية الداخلية</h3>
+          <div class="pill-grid">
+            <span>تقدير الخطر</span><span>نظم المعلومات والاتصالات</span><span>التدقيق والفحص</span><span>بيئة الرقابة</span><span>السياسات والإجراءات</span><span>متابعة أدوات الرقابة</span>
+          </div>
+        </details>
+
+        <details class="lesson-card topic-card" open>
+          <summary><span><i class="fa-solid fa-user-check"></i> الرقابة المالية الخارجية</span></summary>
+          <p><strong>التعريف:</strong> الرقابة التي تتولاها جهة مستقلة عن الإدارة التنفيذية، ولا تخضع لإشرافها بأي شكل من الأشكال.</p>
+          <h3>مبادئ وخصائص المدقق الخارجي</h3>
+          <ul class="check-list">
+            <li>التزام المدقق بخطة منظمة وموثقة.</li>
+            <li>أن يكون التدقيق مبنياً على مجموعة من الأساليب المتعارف عليها.</li>
+            <li>التقييم الموضوعي للأدلة، بما يتطلب العدالة والتجرد وعدم السماح للأحكام المسبقة بالتأثير على الموضوعية.</li>
+          </ul>
+          <div class="note-box">
+            <strong>موضوعات للمناقشة:</strong>
+            العلاقة بين الرقابة المالية والتدقيق، وبين الرقابة المالية والنظام الرقابي، وبين الرقابة المالية وإدارة المخاطر.
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="section topic-section" id="audit" data-aos="fade-up">
+      <div class="section-heading">
+        <p class="eyebrow">المحور الثالث</p>
+        <h2>أشكال التدقيق ومقارنة التدقيق الداخلي والخارجي</h2>
+        <p>التدقيق يختلف بحسب موضوع الفحص والجهة المكلفة والغرض النهائي من التقرير أو الرأي.</p>
+      </div>
+
+      <div class="table-wrap topic-card" tabindex="0" aria-label="جدول أشكال التدقيق">
+        <table>
+          <caption>أشكال التدقيق</caption>
+          <thead>
+            <tr><th>شكل التدقيق</th><th>المكون</th><th>الجهة المكلفة بالتدقيق</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>التدقيق على القوائم المالية</td><td>اختبار القوائم المالية وفق معيار معين للتأكد من مدى تقديمها صورة صادقة وعادلة، وفق معايير التقارير الدولية IFRS والمعايير الدولية ISA.</td><td>إدارة التدقيق الداخلي للمراجعة، والمدقق الخارجي لإبداء الرأي.</td></tr>
+            <tr><td>التدقيق التشغيلي</td><td>فحص كفاءة وفاعلية التشغيل للتأكد من كفاءة الهيكل التنظيمي والتسويق وطرق الإنتاج والأنظمة الآلية.</td><td>إدارة التدقيق الداخلي.</td></tr>
+            <tr><td>تدقيق الالتزام</td><td>فحص إجراءات المنشأة للتأكد من مدى التزامها بالتعليمات والإجراءات واللوائح.</td><td>الجهات الرقابية، لجنة التدقيق، والمدقق الخارجي.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="source-note">ملاحظة: توزيع المسؤولية عن التدقيق على القوائم المالية قد يختلف بين المراجعة الداخلية والخارجية؛ فإبداء الرأي الخارجي هو الدور الأساسي للمدقق الخارجي، بينما تقوم المراجعة الداخلية بمراجعات تخدم الإدارة.</p>
+
+      <div class="table-wrap topic-card" tabindex="0" aria-label="مقارنة بين التدقيق الداخلي والخارجي">
+        <table>
+          <caption>مقارنة بين التدقيق الداخلي والخارجي</caption>
+          <thead>
+            <tr><th>المعيار</th><th>التدقيق الداخلي</th><th>التدقيق الخارجي</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>الأهداف</td><td>تحقيق تأكيد محدود بشأن سلامة القوائم المالية والالتزام والتقييم والاقتراح للتصحيح.</td><td>إبداء رأي محايد في مدى صحة وعدالة القوائم المالية المنشورة للمنشأة، والتأكيد عالٍ.</td></tr>
+            <tr><td>فحص النظام الرقابي</td><td>هدف أساسي.</td><td>هدف ثانوي.</td></tr>
+            <tr><td>نطاق العمل</td><td>جميع أعمال المنشأة، أو ما تطلبه الجهات الرقابية.</td><td>يركز على نظام الرقابة الداخلية والتصرفات المالية لغرض إبداء الرأي.</td></tr>
+            <tr><td>التبعية الإدارية</td><td>إدارة المنشأة.</td><td>المساهمون، أي الجمعية العمومية.</td></tr>
+            <tr><td>الكشف عن الأخطاء</td><td>هدف أساسي لتحسين العمليات والامتثال.</td><td>هدف ثانوي ينتج عن فحص القوائم والنظام الرقابي.</td></tr>
+            <tr><td>نطاق الفحص</td><td>تدقيق تفصيلي.</td><td>تدقيق اختباري يعتمد على العينات.</td></tr>
+            <tr><td>توقيت التدقيق</td><td>طوال السنة المالية.</td><td>عادة في نهاية السنة المالية لإبداء الرأي على القوائم السنوية.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section topic-section" id="sharia" data-aos="fade-up">
+      <div class="section-heading">
+        <p class="eyebrow">المحور الرابع</p>
+        <h2>الرقابة الشرعية في المؤسسات المالية الإسلامية</h2>
+        <p>الرقابة الشرعية تضيف بعداً متخصصاً يركز على الالتزام بأحكام الشريعة في العقود والمنتجات والعمليات والأنشطة.</p>
+      </div>
+
+      <div class="grid two">
+        <article class="glass-card concept-card topic-card">
+          <i class="fa-solid fa-mosque"></i>
+          <h3>تعريف AAOIFI</h3>
+          <p>نظام متكامل يهدف إلى التحكم الشرعي والتأثير في الكيانات الداخلية والخارجية من خلال الامتثال وفحص العقود والاتفاقيات والأنشطة والعمليات وحماية الحقوق وكتابة التقارير، لتحقيق أهداف المؤسسة بطرق تتفق مع أحكام الشريعة الإسلامية.</p>
+        </article>
+        <article class="glass-card concept-card topic-card">
+          <i class="fa-solid fa-landmark"></i>
+          <h3>تعريف بنك الكويت المركزي</h3>
+          <p>فحص أعمال المؤسسة للتأكد من مدى التزامها بأحكام الشريعة الإسلامية.</p>
+        </article>
+      </div>
+
+      <h3 class="subheading">تطور الإطار القانوني للرقابة الشرعية في الكويت</h3>
+      <div class="timeline topic-card">
+        <article><time>2003</time><p>القانون رقم 30 لسنة 2003 بشأن إضافة قسم خاص بالبنوك الإسلامية للقانون رقم 32 لسنة 1968.</p></article>
+        <article><time>2010</time><p>اللائحة التنفيذية لهيئة أسواق المال.</p></article>
+        <article><time>2015 - 2016</time><p>قانون الشركات رقم 1 لسنة 2016.</p></article>
+        <article><time>2016</time><p>تعليمات خاصة بحوكمة الرقابة الشرعية من بنك الكويت المركزي.</p></article>
+        <article><time>2019</time><p>الهيئة العليا للرقابة الشرعية للتأمين التكافلي.</p></article>
+        <article><time>2020</time><p>الهيئة العليا للرقابة الشرعية لبنك الكويت المركزي.</p></article>
+      </div>
+
+      <details class="lesson-card topic-card" open>
+        <summary><span><i class="fa-solid fa-bullseye"></i> أهداف الرقابة الشرعية</span></summary>
+        <div class="cards-list">
+          <article><strong>ضمان الالتزام الشرعي</strong><span>تحقيق امتثال المؤسسة الكامل لأحكام الشريعة الإسلامية في جميع أعمالها.</span></article>
+          <article><strong>تعزيز الامتثال القانوني</strong><span>المساهمة في الالتزام بالقوانين والتشريعات المحلية والدولية ذات الصلة.</span></article>
+          <article><strong>تحقيق متطلبات الأنظمة الأساسية</strong><span>الوفاء بما تنص عليه الأنظمة الأساسية لكثير من المؤسسات من ضرورة الالتزام بأحكام الشريعة.</span></article>
+          <article><strong>دمج المتطلبات الشرعية</strong><span>إدراج المتطلبات الشرعية في السياسات والإجراءات والأنظمة والمعايير المالية والإدارية وتدريب الموظفين.</span></article>
+          <article><strong>تمكين الجهات الرقابية</strong><span>تسهيل مهمة الجهات الرقابية الخارجية في التأكد من مدى الالتزام بالضوابط الشرعية.</span></article>
+          <article><strong>مواجهة تعقيد المنتجات</strong><span>التعامل مع تعقيد المنتجات المالية وتداخل إجراءاتها بنظام رقابة متخصص.</span></article>
+        </div>
+      </details>
+
+      <div class="table-wrap topic-card" tabindex="0">
+        <table>
+          <caption>أنواع الرقابة الشرعية</caption>
+          <thead><tr><th>البيان</th><th>الرقابة الشرعية الداخلية</th><th>الرقابة الشرعية الخارجية</th></tr></thead>
+          <tbody>
+            <tr><td>الهدف</td><td>ضمان الالتزام بالأحكام الشرعية وكشف أي انحراف ومعالجته.</td><td>توفير المرجع الشرعي للمؤسسة وكشف ما يرفع منها لهيئة الرقابة الشرعية.</td></tr>
+            <tr><td>مرجعية النظام</td><td>القرارات الصادرة عن هيئة الرقابة الشرعية للمؤسسة.</td><td>غالباً تشمل المعايير الشرعية الصادرة عن الجهات المختصة والتقارير المرفوعة للهيئات الشرعية الأعلى.</td></tr>
+            <tr><td>جهة التدقيق</td><td>إدارة التدقيق الشرعي الداخلي.</td><td>المدقق الشرعي الخارجي.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section topic-section" id="kuwait-bodies" data-aos="fade-up">
+      <div class="section-heading">
+        <p class="eyebrow">المحور الخامس</p>
+        <h2>الهيئات الشرعية الرقابية في الكويت</h2>
+        <p>توضح المادة بنية رقابية شرعية متكاملة تغطي القطاع المصرفي والمالي الإسلامي، سوق رأس المال، والتأمين التكافلي.</p>
+      </div>
+
+      <details class="lesson-card topic-card" open>
+        <summary><span><i class="fa-solid fa-building-columns"></i> الهيئة العليا للرقابة الشرعية في بنك الكويت المركزي</span></summary>
+        <div class="grid two">
+          <div>
+            <h3>الإنشاء والموقع</h3>
+            <ul class="check-list">
+              <li>صدر قرار من محافظ بنك الكويت المركزي في سبتمبر 2020 بإنشاء الهيئة العليا للرقابة الشرعية وتحديد أسسها وقواعدها.</li>
+              <li>تقع الهيئة العليا في قمة هرم الرقابة الشرعية على القطاع المالي الإسلامي في الكويت، بما يشمل البنوك الإسلامية وشركات الاستثمار وغيرها.</li>
+            </ul>
+            <h3>التشكيل وشروط العضوية</h3>
+            <ul class="check-list">
+              <li>تتكون من ثلاثة أعضاء على الأقل من علماء الشريعة وخبراء فقه المعاملات المالية الإسلامية.</li>
+              <li>مدة العضوية ثلاث سنوات قابلة للتجديد.</li>
+              <li>يشترط الحصول على شهادة جامعية في تخصص مناسب وخبرة لا تقل عن خمس سنوات في العمل المصرفي الإسلامي.</li>
+              <li>يشترط الإلمام بعلوم التمويل الإسلامي وحسن السيرة والسمعة والنزاهة.</li>
+              <li>ألا يكون العضو قد حكم عليه بجريمة مخلة بالشرف أو الأمانة.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>اختصاصات الهيئة</h3>
+            <ul class="check-list">
+              <li>إبداء الرأي والمشورة للبنك المركزي حول شرعية المعاملات والتعليمات وشؤون المؤسسات الخاضعة لرقابته.</li>
+              <li>اقتراح إرشادات شرعية عامة لمنتجات وخدمات البنوك الإسلامية.</li>
+              <li>اقتراح تنظيمات لأعمال هيئات الرقابة والتدقيق الشرعي الداخلي والخارجي وحوكمة الفتوى والرقابة.</li>
+              <li>الموافقة المسبقة على المرشحين لعضوية هيئات الرقابة الشرعية في البنوك الإسلامية.</li>
+              <li>البت في الخلافات الشرعية عند إحالتها، ويكون رأيها مرجحاً ونهائياً.</li>
+              <li>إبداء الرأي للمحاكم والتحكيم ووحدات البنك المركزي فيما يحال إليها من قضايا مرتبطة بالمال الإسلامي.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="note-box">
+          <strong>علاقتها بالبنوك الإسلامية المحلية:</strong>
+          تلتزم البنوك بعرض منتجاتها وخدماتها الجديدة على الهيئة العليا لاعتمادها شرعياً قبل التطبيق، وإذا اختلف رأي الهيئة العليا مع رأي هيئة رقابة شرعية لبنك إسلامي يرجح رأي الهيئة العليا.
+        </div>
+      </details>
+
+      <div class="grid two">
+        <details class="lesson-card topic-card" open>
+          <summary><span><i class="fa-solid fa-handshake-angle"></i> آلية الاجتماعات والواجبات</span></summary>
+          <h3>اجتماعات الهيئة</h3>
+          <ul class="check-list">
+            <li>تجتمع بصفة دورية لا تقل عن أربع مرات في السنة، أو كلما اقتضت الضرورة.</li>
+            <li>ينعقد الاجتماع بحضور غالبية الأعضاء، وجميعهم إذا كانت مكونة من ثلاثة.</li>
+            <li>يمكن حضور الأعضاء عبر وسائل الاتصال الحديثة مع تسجيل ذلك.</li>
+            <li>تصدر القرارات بأغلبية أصوات الحاضرين، ويرجح جانب الرئيس عند تساوي الأصوات.</li>
+            <li>يجوز دعوة ذوي الخبرة للمشورة دون حق التصويت.</li>
+          </ul>
+          <h3>واجبات العضو</h3>
+          <ul class="check-list">
+            <li>الالتزام بعضوية هيئات الرقابة الشرعية في البنوك الإسلامية أو أن يكون مستشاراً شرعياً.</li>
+            <li>حضور جميع اجتماعات الهيئة ما لم يكن هناك عذر مقبول.</li>
+            <li>الحفاظ على سرية المعلومات.</li>
+            <li>عدم التصريح أو نشر الأبحاث والآراء باسم الهيئة دون موافقة محافظ البنك المركزي.</li>
+            <li>عدم الإدلاء برأي شخصي يتعارض علناً مع رأي الهيئة الرسمي.</li>
+          </ul>
+        </details>
+
+        <details class="lesson-card topic-card" open>
+          <summary><span><i class="fa-solid fa-triangle-exclamation"></i> تضارب المصالح وانتهاء العضوية</span></summary>
+          <p>يجب على أعضاء الهيئة الإفصاح قبل الاجتماع عن أي مصلحة شخصية مباشرة أو غير مباشرة تتعارض مع مقتضيات عضويتهم بشأن مسألة معروضة.</p>
+          <h3>حالات انتهاء العضوية</h3>
+          <ul class="check-list">
+            <li>الوفاة.</li>
+            <li>فقدان العضوية أو الإفلاس.</li>
+            <li>الإدانة بجريمة مخلة بالشرف أو الأمانة.</li>
+            <li>الإخلال بالواجبات بموجب حكم نهائي.</li>
+            <li>الاستقالة بطلب كتابي لمحافظ البنك.</li>
+            <li>فقدان الأهلية.</li>
+          </ul>
+        </details>
+      </div>
+
+      <div class="grid two">
+        <details class="lesson-card topic-card" open>
+          <summary><span><i class="fa-solid fa-chart-line"></i> المجلس الاستشاري للرقابة الشرعية في هيئة أسواق المال</span></summary>
+          <p>يتبع مجلس المفوضين في هيئة أسواق المال، ويتألف من خمسة أعضاء على الأقل من الخبراء في الشريعة والمال والقانون والاقتصاد، مع ضرورة وجود متخصص في فقه المعاملات المالية الإسلامية وآخر متخصص في أنشطة الهيئة.</p>
+          <ul class="check-list">
+            <li><strong>الاستشارات الشرعية:</strong> إبداء الرأي الشرعي في المسائل المتعلقة بعمل الهيئة والمنتجات والأدوات المالية والشكاوى والمنازعات.</li>
+            <li><strong>التطوير والتنظيم:</strong> اقتراح منتجات وأدوات مالية إسلامية جديدة ولوائح ومعايير منظمة للرقابة والتدقيق الشرعي الداخلي والخارجي وتأهيل أعضاء الهيئات الشرعية.</li>
+            <li><strong>تعزيز السوق:</strong> المساهمة في وضع الخطط والمنهجيات لتطوير سوق رأس المال الإسلامي في دولة الكويت.</li>
+          </ul>
+        </details>
+
+        <details class="lesson-card topic-card" open>
+          <summary><span><i class="fa-solid fa-shield-halved"></i> اللجنة الاستشارية للرقابة الشرعية للتأمين التكافلي</span></summary>
+          <p>تنشأ بقرار من مجلس إدارة وحدة تنظيم التأمين، وتعتبر قراراتها ملزمة للوحدة فيما يتعلق بالتزامها بالشريعة. تتألف من خمسة أعضاء على الأقل، غالبيتهم من خبراء فقه المعاملات المالية الإسلامية والتأمين التكافلي، مع وجود متخصص في الشريعة، ويعينون لمدة سنتين قابلة للتجديد لمرة واحدة.</p>
+          <ul class="check-list">
+            <li><strong>الاستشارات الشرعية:</strong> إبداء الرأي الشرعي في مجالات عمل الوحدة والمنتجات التأمينية التكافلية والشكاوى والمنازعات.</li>
+            <li><strong>التطوير والتنظيم:</strong> اقتراح منتجات تأمينية تكافلية ولوائح ومعايير للرقابة والتدقيق الشرعي وتأهيل أعضاء الهيئات الشرعية لدى شركات التأمين التكافلي.</li>
+            <li><strong>تعزيز القطاع:</strong> إعداد دراسات واقتراح خطط لتطوير نشاط التأمين التكافلي واقتراح نماذج العقود المعتمدة.</li>
+          </ul>
+        </details>
+      </div>
+
+      <div class="table-wrap topic-card" tabindex="0" aria-label="مقارنة بين الهيئات الشرعية الرقابية الرئيسية في الكويت">
+        <table>
+          <caption>مقارنة بين الهيئات الشرعية الرقابية الرئيسية في الكويت</caption>
+          <thead>
+            <tr><th>معيار المقارنة</th><th>الهيئة العليا للرقابة الشرعية - بنك الكويت المركزي</th><th>المجلس الاستشاري - هيئة أسواق المال</th><th>اللجنة الاستشارية - وحدة تنظيم التأمين</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>التبعية / جهة الإنشاء</td><td>تنشأ بقرار من محافظ بنك الكويت المركزي.</td><td>يتبع مجلس المفوضين في هيئة أسواق المال.</td><td>تنشأ بقرار من مجلس إدارة وحدة تنظيم التأمين.</td></tr>
+            <tr><td>عدد الأعضاء</td><td>ثلاثة أعضاء على الأقل.</td><td>خمسة أعضاء على الأقل.</td><td>خمسة أعضاء على الأقل.</td></tr>
+            <tr><td>التخصص المطلوب</td><td>علماء شريعة وخبراء فقه معاملات مالية إسلامية، شهادة جامعية في تخصص مناسب، والإلمام بعلوم التمويل الإسلامي.</td><td>خبراء في الشريعة والمال والقانون والاقتصاد، مع متخصص في فقه المعاملات المالية الإسلامية ومتخصص في أنشطة الهيئة.</td><td>غالبيتهم خبراء في فقه المعاملات المالية الإسلامية والتأمين التكافلي، مع وجود متخصص في الشريعة.</td></tr>
+            <tr><td>الخبرة المطلوبة</td><td>خمس سنوات على الأقل في العمل المصرفي الإسلامي.</td><td>لم يذكر عدد سنوات محدد، لكن يشترط أن يكونوا خبراء.</td><td>لم يذكر عدد سنوات محدد، لكن يشترط أن يكونوا خبراء.</td></tr>
+            <tr><td>مدة العضوية</td><td>ثلاث سنوات قابلة للتجديد.</td><td>لم يذكر صراحة في النص المقدم.</td><td>سنتان قابلة للتجديد لمرة واحدة.</td></tr>
+            <tr><td>تضارب المصالح</td><td>يجب الإفصاح عن أي تضارب مصالح، ومن واجبات العضو الالتزام بعضوية هيئات رقابة شرعية أو الاستشارة الشرعية.</td><td>لم يتطرق النص صراحة لهذه النقطة.</td><td>لم يتطرق النص صراحة لهذه النقطة.</td></tr>
+            <tr><td>الاجتماعات الدورية</td><td>أربع مرات في السنة على الأقل، أو كلما اقتضت الضرورة.</td><td>لم يذكر عدد محدد، وتجتمع لإبداء الرأي عند الطلب.</td><td>مرة واحدة في السنة على الأقل، أو كلما دعت الحاجة.</td></tr>
+            <tr><td>إلزامية القرارات</td><td>رأيها مرجح ونهائي في الخلافات، وتأثيرها قوي على البنوك الإسلامية.</td><td>دورها استشاري أساساً.</td><td>قراراتها ملزمة للوحدة فيما يتعلق بالتزامها بالشريعة.</td></tr>
+            <tr><td>الدور الأساسي المميز</td><td>المرجعية العليا للقطاع المصرفي والمالي الإسلامي، البت في الخلافات، والموافقة على أعضاء هيئات البنوك.</td><td>تقديم المشورة الشرعية لهيئة أسواق المال في أنشطتها ومنتجاتها وتطوير السوق.</td><td>تقديم المشورة الشرعية لوحدة تنظيم التأمين في منتجات التأمين التكافلي وتطوير القطاع.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="source-note">ملاحظة: بعض المعلومات مستنتجة من طبيعة عمل الهيئات أو قد تتوفر تفاصيل أكثر في الوثائق الأصلية الكاملة لكل جهة.</p>
+    </section>
+
+    <section class="section topic-section" id="takeaways" data-aos="fade-up">
+      <div class="section-heading">
+        <p class="eyebrow">مراجعة مركزة</p>
+        <h2>الخلاصة ونقاط الحفظ الرئيسية</h2>
+        <p>هذه النقاط تمثل أكثر مواضع المادة قابلية للتحول إلى أسئلة مقارنة أو تعريف أو تعداد.</p>
+      </div>
+      <div class="key-points-grid topic-card">
+        <article><i class="fa-solid fa-bullseye"></i><strong>تعريف الرقابة</strong><span>مطابقة مسيرة التنفيذ مع الخطة المقررة.</span></article>
+        <article><i class="fa-solid fa-sitemap"></i><strong>أشكال الرقابة</strong><span>تنظيمية، مالية، التزام، أمن وحماية، إدارية، وأداء.</span></article>
+        <article><i class="fa-solid fa-coins"></i><strong>الرقابة المالية</strong><span>سلامة التصرفات، كشف الانحرافات، ومطابقة القوانين.</span></article>
+        <article><i class="fa-solid fa-building"></i><strong>الرقابة الداخلية</strong><span>نظام متكامل داخل المنشأة يعتمد على التقارير وكفاءة العمليات والالتزام.</span></article>
+        <article><i class="fa-solid fa-user-tie"></i><strong>الرقابة الخارجية</strong><span>جهة مستقلة عن الإدارة التنفيذية تتبع خطة وأساليب موضوعية.</span></article>
+        <article><i class="fa-solid fa-table"></i><strong>التدقيق الداخلي والخارجي</strong><span>الفروقات الأساسية في الأهداف، النطاق، التبعية، التوقيت، ومستوى الفحص.</span></article>
+        <article><i class="fa-solid fa-mosque"></i><strong>الرقابة الشرعية</strong><span>ضمان الالتزام بأحكام الشريعة في العقود والمنتجات والأنشطة.</span></article>
+        <article><i class="fa-solid fa-timeline"></i><strong>الإطار القانوني الكويتي</strong><span>تطور من البنوك الإسلامية إلى الأسواق المالية والتأمين التكافلي والهيئات العليا.</span></article>
+        <article><i class="fa-solid fa-landmark"></i><strong>هيئة بنك الكويت المركزي</strong><span>مرجعية عليا للقطاع المالي الإسلامي ورأيها مرجح ونهائي في الخلافات.</span></article>
+        <article><i class="fa-solid fa-scale-balanced"></i><strong>تكامل الهيئات</strong><span>الهيئات المختلفة تبني بيئة تمويل إسلامي أكثر ثقة وتنظيماً.</span></article>
+      </div>
+    </section>
+
+    <section class="section topic-section" id="exam-questions" data-aos="fade-up">
+      <div class="section-heading">
+        <p class="eyebrow">تدريب قبل الاختبار</p>
+        <h2>أسئلة متوقعة</h2>
+        <p>استخدم هذه الأسئلة للمراجعة الشفهية أو الكتابية قبل حل الاختبار التفاعلي.</p>
+      </div>
+      <div class="question-bank topic-card">
+        <ol>
+          <li>عرّف الرقابة، ثم اشرح علاقتها بالخطة المقررة.</li>
+          <li>عدد أشكال الرقابة في المنشآت التجارية مع مثال مختصر لكل نوع.</li>
+          <li>ما أهداف الرقابة المالية؟ ولماذا يعد كشف الانحرافات جزءاً مركزياً فيها؟</li>
+          <li>قارن بين الرقابة المالية الداخلية والرقابة المالية الخارجية من حيث الجهة والنطاق والهدف.</li>
+          <li>اذكر مكونات نظام الرقابة المالية الداخلية.</li>
+          <li>ما الفرق بين التدقيق على القوائم المالية والتدقيق التشغيلي وتدقيق الالتزام؟</li>
+          <li>قارن بين التدقيق الداخلي والخارجي من حيث التبعية وتوقيت التدقيق ومستوى الفحص.</li>
+          <li>عرّف الرقابة الشرعية وفق AAOIFI ووفق بنك الكويت المركزي.</li>
+          <li>اشرح التسلسل الزمني لتطور الإطار القانوني للرقابة الشرعية في الكويت.</li>
+          <li>ما أهداف الرقابة الشرعية في المؤسسات المالية الإسلامية؟</li>
+          <li>ما اختصاصات الهيئة العليا للرقابة الشرعية في بنك الكويت المركزي؟</li>
+          <li>ما شروط عضوية الهيئة العليا للرقابة الشرعية؟</li>
+          <li>قارن بين المجلس الاستشاري للرقابة الشرعية في هيئة أسواق المال واللجنة الاستشارية للتأمين التكافلي.</li>
+          <li>متى تنتهي عضوية عضو الهيئة العليا للرقابة الشرعية؟</li>
+          <li>لماذا يعد الإفصاح عن تضارب المصالح مهماً في عمل الهيئات الشرعية الرقابية؟</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section quiz-section" id="quiz" data-aos="fade-up">
+      <div class="section-heading">
+        <p class="eyebrow">اختبار نهائي</p>
+        <h2>اختبر فهمك</h2>
+        <p>أجب عن الأسئلة، ثم اعرض النتيجة والتفسير لكل إجابة صحيحة.</p>
+      </div>
+      <div class="quiz-shell">
+        <div class="quiz-topline">
+          <span id="quizProgress">السؤال 1 من 15</span>
+          <span id="quizScoreLive">الدرجة: 0</span>
+        </div>
+        <div id="quizContainer" class="quiz-container" aria-live="polite"></div>
+        <div class="quiz-actions">
+          <button class="btn primary" id="nextQuestion" type="button">السؤال التالي</button>
+          <button class="btn ghost" id="restartQuiz" type="button">إعادة الاختبار</button>
+        </div>
+        <div class="quiz-result" id="quizResult" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="العودة إلى الأعلى">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
